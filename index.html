@@ -207,5 +207,209 @@
         display: inline-block;
  }
  
+html{
+    text-align: center;
+    padding:0;
+    width:auto;
+    background: url(../2Frey/b3.jpg) ;
+    background-size: 100vw 100vw;
+}
+
+nav{
+   
+    background: url(../2Frey/b2.jpg) no-repeat 0 0;
+    margin:0;
+    padding:0;
+    margin-top:-8px;
+    position:fixed;
+    height: 100%;
+    width:100%;
+   background-attachment: fixed;
+  
+  
+ }
+.my-logo{
+    margin-top: 1px;
+    margin-left:20px;
+    border: 2px;
+    border-radius: 2px;
+    width:80px;
+    height:53px;
+    background-image: url(../2Frey/logo.jpg);
+    background-size: 100%;
+
+ }
+ header{
+   
+    float:top;
+    margin-left:-10px;
+    padding:0;
+    width:100%;
+    height:50px;
+ }
+ .home{
+    margin:-50px 200px;
+    background:url(../2Frey/b.jpg) no-repeat center;
+            height: 50px;
+            border-color:white;
+            width: 50px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+            float: right;
+            box-shadow: 0px 0px 0px 0px;
+            padding:0px;
+            transition: background-color 1s,
+            color 1s;
+            transition: box-shadow 0.15s,
+            color 0.15s;
+            font-size: 1px;
+}
+.link-book{  
+    margin:-50px 125px;
+    background:url(../2Frey/a.jpg) no-repeat center;
+            height: 50px;
+            border-color:white;
+            width: 50px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+         
+            box-shadow: 0px 0px 0px 0px;
+            padding:0px;
+            transition: background-color 1s,
+            color 1s;
+            transition: box-shadow 0.15s,
+            color 0.15s;
+            float: right;
+}
+.dropdown.active > .link-book,
+.link-book:hover{
+    opacity: 0.5;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-book {
+    position: absolute;
+    right:90px;
+    top: calc(100% + .25rem);
+    background-color: palevioletred;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+    opacity:0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.dropdown.active > .link-book + .dropdown-book {
+    opacity:1;
+    transform: translateY(0);
+    pointer-events: auto
+}
 
 
+
+.link-s{  
+    margin:-50px 50px;
+    background:url(../2Frey/c.jpg) no-repeat center;
+            height: 50px;
+            border-color:white;
+            width: 50px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+            
+            box-shadow: 0px 0px 0px 0px;
+            padding:0px;
+            transition: background-color 1s,
+            color 1s;
+            transition: box-shadow 0.15s,
+            color 0.15s;
+            float:right;
+}
+.dropdown.active > .link-s,
+.link-s:hover{
+    opacity: 0.5;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-s {
+    position: absolute;
+    right:10px;
+    top: calc(100% + .25rem);
+    background-color: palevioletred;
+    padding: .25rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+    opacity:0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.dropdown.active > .link-s + .dropdown-s {
+    opacity:1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+
+
+.dropdown-heading{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.link1{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    gap:.01rem;
+    font-size: 11px;
+    text-align: left;
+    
+}
+.dropdown-links{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    gap:.01rem;
+    font-size: 12px;
+    text-align: left;
+    
+}
+.services-grid{
+    
+    display:grid;
+    grid-template-columns: repeat(2, max-content);
+    gap:1rem;
+}
+
+.m{
+    display: inline-block;
+    background-image: url(../2Frey/m.jpg);
+    height: 28px;
+    width: 30px;
+    color:white;
+}
+.i{
+    color:rgb(242, 146, 44);
+    display: inline-block;
+    background-image: url(../2Frey/i.jpg);
+    height: 28px;
+    width: 30px;
+}
+.p{
+    color:greenyellow;
+    display: inline-block;
+    background-image: url(../2Frey/p.jpg);
+    height: 28px;
+    width: 30px;
+}
+
+
+</style>
