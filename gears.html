@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content=IE-edge>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Freycious Care</title>
+        <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<div class="wrapper"> 
+    <body>  
+    <header>
+        
+          
+            <nav>
+            <div class="my-logo"></div> 
+        <a href="home.html"><button class="home">.</button></a>
+    <div class="dropdown" data-dropdown>
+        <button class="link-s" data-dropdown-button>.</button>
+            <div class="dropdown-s services-grid">
+                <div>
+                    <div class="dropdown-heading">Hair Services</div>
+                    <div class="dropdown-links">
+                        <a href="haircut.html" class="link1">Haircut</a> 
+                        <a href="treatment.html" class="link1">Treatment</a> 
+                        <a href="color.html" class="link1">Color</a>  
+                    </div>
+                </div>
+            <div>
+                <div class="dropdown-heading">Nail Services</div>
+                <div class="dropdown-links">
+                    <a href="extension.html" class="link1">Extension</a> 
+                    <a href="design.html" class="link1">Design</a>
+                    <a href="polish.html" class="link1">Polish</a>  
+                </div>
+            </div>
+        <div>
+        <div class="dropdown-heading">Foot Services</div>
+        <div class="dropdown-links">
+            <a href="footspa.html" class="link1">Footspa</a> 
+            <a href="footmassage.html" class="link1">Foot Massage</a>
+            <a href="package.html" class="link1">Package</a>
+        </div>
+        </div>
+        <div>
+    <div class="dropdown-heading">Snorkeling</div>
+    <div class="dropdown-links">
+        <a href="services.html" class="link1">Services</a> 
+        <a href="gears.html" class="link1">Gears</a>
+        <a href="packages.html" class="link1">Package</a>
+    </div>
+            </div>
+</div>
+<div class="dropdown" data-dropdown>
+        <button class="link-book" data-dropdown-button>,</button>
+            <div class="dropdown-book book-grid">
+    <div>
+        <div class="dropdown-heading">Message Us</div>
+        <div class="dropdown-links">
+            <a href="https://www.messenger.com/t/100013006213764"><div class="m">.</div>:Messenger</a> 
+            <a href="https://www.instagram.com/direct/t/103575947703877/"><div class="i">.</div>:Instagram</a> 
+            <a href="#" class="link"><div class="p">.</div>:09916436458</a>  
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+        
+        </nav>
+    </header>
+</div>
+
+<h1>Gears</h1>
+<h2>Snorkel Mask</h2>
+<div class="container" >
+    <div class="image-container">
+        <div class="image"><img src="" alt=""></div>
+</div>
+<div class="popup-image">
+    <span>&times;</span>
+        <img src="" alt="">
+        
+</div>
+</div>
+<h2>Fins</h2>
+<div class="container" >
+    <div class="image-container">
+        <div class="image"><img src="" alt=""></div>
+</div>
+<div class="popup-image">
+    <span>&times;</span>
+        <img src="" alt="">
+        
+</div>
+</div>
+<h2>Shoes</h2>
+<div class="container" >
+    <div class="image-container">
+        <div class="image"><img src="" alt=""></div>
+</div>
+<div class="popup-image">
+    <span>&times;</span>
+        <img src="" alt="">
+        
+</div>
+</div>
+ <script>
+    document.querySelectorAll('.image-container img').forEach(image =>{
+        image.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+    });
+    document.querySelector('.popup-image span').onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'none';
+    }
+ </script>
+</body>
+</html>
+ <style>
+.container{
+    
+    box-sizing: border-box;
+    position: relative;
+    min-height:25vh;
+}
+.container .image-container .image{
+    
+    margin-left: 1%;
+    padding: 1px -1px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Times New Roman;
+    text-align: center;
+    font-size:35px;
+    height:200px;
+    width:212px;
+    border:10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor:pointer;
+    display:inline-block;
+}
+
+.container .image-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+    
+}
+.container .image-container .image:hover img{
+    transform: scale(1.1);
+}
+.container .popup-image{
+    position: fixed;
+    top:0; left:0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index:100;
+    display: none;
+}
+.container .popup-image span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color:#fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.container .popup-image img{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    width: 750px;
+    object-fit: cover;
+}
+@media(max-width:768px){
+    .container .popup-image img{
+        width:95%;
+    }
+}
