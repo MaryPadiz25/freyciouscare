@@ -1,9 +1,68 @@
-html{
+
+h1{
+   
+    align-self: center;
+    margin-top: -5px;
+    width:100%;
+    align-items: center;
+    text-align:center;
+    font-family: Times New Roman;
+    font-size: 300%;
+    font-style:italic;
+    font-weight: bold;
+    float:left;
+    height: 20px;
+   
+}
+h2{ position: fixed;
+    display: fixed;
+    overflow: hidden;
+    margin-left:1%;
+    width:25%;
+    margin-top:-118px;
+    
+    position: inline-block;
+    
+    background:rgb(230, 14, 86);
+    height: 106px;
+   
     text-align: center;
-    padding:0;
-    width:auto;
-    background: url(b3.jpg) ;
-    background-size: 100vw 100vw;
+}
+h3{position: fixed;
+    margin-left: 10% ;
+    font-size:1.6vw;
+    margin-top: -93px;
+    width:10%;
+    align-items: center;
+    text-align: center;
+    color:lightblue;
+    
+}
+.map{
+    margin:2px 0;
+    background:url(map.png)repeat center;
+            height: 100px;
+            border-color:white;
+            width: 100px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+            float: left;
+            box-shadow: 0px 0px 0px 0px;
+            padding:0px;
+            transition: background-color 1s,
+            color 1s;
+            transition: box-shadow 0.15s,
+            color 0.15s;
+}
+
+.top1{
+    
+    
+    background-color: palevioletred;
+    margin-top:50px;
+    height: 170px;
+    width:100%;
 }
 
 nav{
@@ -30,16 +89,38 @@ nav{
     background-size: 100%;
 
  }
+
  header{
-   
-    float:top;
+  
+    position: fixed;
+    top:5px;
+    
+
     margin-left:-10px;
     padding:0;
     width:100%;
-    height:50px;
+    
+    
  }
+ .header_content{
+    height:50px;
+    display: flex;
+ }
+
+ body{
+    align-items: center;
+    text-align: center;
+    padding:0;
+    width:auto;
+    background: url(b3.jpg) ;
+    background-size: 100vw 100vw;
+ }
+ 
+ 
+
+ 
  .home{
-    margin:-50px 200px;
+    margin:-48px 200px;
     background:url(b.jpg) no-repeat center;
             height: 50px;
             border-color:white;
@@ -56,8 +137,28 @@ nav{
             color 0.15s;
             font-size: 1px;
 }
+.now{
+    margin:-48px 270px;
+    background:greenyellow;
+            height: 50px;
+            border-color:white;
+            width: 110px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+            float: right;
+            box-shadow: 0px 0px 0px 0px;
+            padding:0px;
+            transition: background-color 1s,
+            color 1s;
+            transition: box-shadow 0.15s,
+            color 0.15s;
+            font-size: 15px;
+            font-weight: bolder;
+}
+
 .link-book{  
-    margin:-50px 125px;
+    margin:-48px 125px;
     background:url(a.jpg) no-repeat center;
             height: 50px;
             border-color:white;
@@ -79,13 +180,12 @@ nav{
     opacity: 0.5;
 }
 .dropdown{
-    position: relative;
-}
+    position: relative;}
 .dropdown-book {
     position: absolute;
     right:90px;
     top: calc(100% + .25rem);
-    background-color: palevioletred;
+    background-color: rgb(250, 7, 88);
     padding: .75rem;
     border-radius: .25rem;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
@@ -94,6 +194,7 @@ nav{
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
+
 .dropdown.active > .link-book + .dropdown-book {
     opacity:1;
     transform: translateY(0);
@@ -103,7 +204,7 @@ nav{
 
 
 .link-s{  
-    margin:-50px 50px;
+    margin:-48px 50px;
     background:url(c.jpg) no-repeat center;
             height: 50px;
             border-color:white;
@@ -131,7 +232,7 @@ nav{
     position: absolute;
     right:10px;
     top: calc(100% + .25rem);
-    background-color: palevioletred;
+    background-color:  rgb(250, 7, 88);
     padding: .25rem;
     border-radius: .25rem;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
@@ -201,4 +302,54 @@ nav{
     height: 28px;
     width: 30px;
 }
+.small-img-row{
+    width:50%;
+    margin-left:28%;
+    
+    margin-top: 5px;
+    display: flex;
+    background:rgb(230, 14, 86);
+    overflow: hidden;
+   
+    font-size:2vw;
+    font-weight: bolder;
+    align-items: center;
+   
+    color:rgb(111, 251, 4);
+    float: left;
+    text-align: center;
+}
+.small-img{
+    position: relative;
+    width:150px;
+}
+.play-btn{
+    width: 60px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.video-player{
+    height: 25px;
+    margin-top: -50px;
+    width:45%;
+    position: absolute;
+    left:23%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+video:focus{
+    outline: none;
+}
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    width: 30px;
+    cursor: pointer;
 
+}
+   
