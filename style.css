@@ -138,7 +138,7 @@ nav{
             font-size: 1px;
 }
 .now{
-    margin:-35px 270px;
+    margin:-48px 50%;
     background:greenyellow;
             height: 50px;
             border-color:white;
@@ -336,7 +336,7 @@ nav{
     margin-top: -50px;
     width:45%;
     position: absolute;
-    left:40%;
+    left:55%;
     top:50%;
     transform: translate(-50%, -50%);
     display: none;
