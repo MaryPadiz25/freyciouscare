@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Booking</title>
+    </head>
+<body>
+    <div class="background">
+        <div class="booking-form">
+            <a href="index.html"><button class="home">.</button></a>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="31719e02-64d3-4156-af9f-463e05262759">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="number">Contact No.:</label>
+                <input type="text" name="number" id="number" required>
+
+                <label for="services">Service:</label>
+                <input type="text" name="services" id="services" required>
+                
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" required> 
+                
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+body.html{
+    height:100%;
+    width:100%;
+    margin:0; 
+    font-family: 'poppins', san-serif;
+    
+}
+.background{
+    background-image: url('b3.jpg');
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position-y: center;
+}
+.booking-form{
+    font-weight: bold;
+    background-image: url(logo1.jpg);
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width:80%;
+    margin:auto;
+}
+.booking-form h2{
+    
+    text-align: center;
+}
+.booking-form form{
+    display:flex;
+    flex-direction: column;
+}
+.booking-form input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.booking-form button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.booking-form button:hover{
+    background-color: #45a049;
+}
+
+.home{
+    background:url(../2Frey/b.jpg) no-repeat center;
+            height: 50px;
+            border-color:white;
+            width: 50px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+            float: top, right;
+            box-shadow: 0px 0px 0px 0px;
+            padding:0px;
+            transition: background-color 1s,
+            color 1s;
+            transition: box-shadow 0.15s,
+            color 0.15s;
+            font-size: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
