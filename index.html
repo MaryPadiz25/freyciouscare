@@ -9,14 +9,15 @@
     <script src="script.js" defer></script>
 </head>
 <div class="wrapper"> 
-    <body>  
+   
     <header>
         
           
             <nav>
-            <div class="my-logo"></div> 
-        <a href="index.html"><button class="home">.</button></a>
-    <div class="dropdown" data-dropdown>
+            <div class="my-logo"></div>
+            <a href="booking.html"><button class="now">BOOK NOW</button></a>
+            <a href="index.html"><button class="home">.</button></a>
+        <div class="dropdown" data-dropdown>
         <button class="link-s" data-dropdown-button>.</button>
             <div class="dropdown-s services-grid">
                 <div>
@@ -58,6 +59,7 @@
     <div>
         <div class="dropdown-heading">Message Us</div>
         <div class="dropdown-links">
+            
             <a href="https://www.messenger.com/t/100013006213764"><div class="m">.</div>:Messenger</a> 
             <a href="https://www.instagram.com/direct/t/103575947703877/"><div class="i">.</div>:Instagram</a> 
             <a href="#" class="link"><div class="p">.</div>:09916436458</a>  
@@ -66,12 +68,54 @@
 </div>
     </div>
 </div>
-        
-        </nav>
-    </header>
+
+</nav>
+<div class="top1">
+    <h1>Freycious Care</h1>
+    
+    
+   
+    <div class="small-img-row">
+        <div class="small-img">
+            <img src="video.png">
+            <img src="play.png" class="play-btn"
+            onclick="playVideo('video.mp4')">
+        </div>
+        <p>!!! 799pesos only Hair Rebond PROMO !!!
+        </p>
+    </div>
 </div>
-<h1>Freycious Care</h1>
-<section class="container">
+<div class="video-player" id="videoPlayer">
+    <video width="100%" controls autoplay id="myVideo">
+        <source src="video.mp4" type="video/mp4" type="video">
+    </video>
+    <img src="play.png" class="close-btn"
+    onclick="stopVideo()">
+</div>
+<script>
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myvideo = document.getElementById("myVideo");
+
+    function stopVideo(){
+        videoPlayer.style.display = "none";
+    }
+    
+    function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+    }
+
+
+</script><h2>
+<a href="https://www.google.com/maps/place/Freycious+Care/@11.280343,124.059507,1530m/data=!3m1!1e3!4m6!3m5!1s0x33a87700188dbdb7:0x93c043833fefcddf!8m2!3d11.2803427!4d124.0595072!16s%2Fg%2F11y36727bq?hl=en&entry=ttu">
+    <button class="map"></button></a>
+    <h3>Tagasa, Maya, Daanbantayan,Cebu</h3></h2> 
+   </header>
+</div>
+<body> 
+    
+
+    <section class="container">
     <div class="slider-wrapper">
         <div class="slider">
             <img id="slide-1" src="logo1.jpg" alt="">
@@ -80,61 +124,55 @@
             <img id="slide-4" src="4.jpg" alt="">
         </div>
     <div class="slider-nav">
-        <a href="#slide-1">.</a>
-        <a href="#slide-2">.</a>
-        <a href="#slide-3">.</a>
-        <a href="#slide-4">.</a>
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+        <a href="#slide-4"></a>
     </div>
     </div>
+
 </section>
 <div class="content">
     
 <p>
-    Mary Joy Padiz, the owner of Freycious Nails and Hair Salon had started doing the Hair Treatment Services at the age of 20 years old of the year 2019. 
+    Mary Joy Padiz, the owner of Freycious Care had started doing the Hair Treatment Services at the age of 20 years old of the year 2019. 
     Despite not having able to study the said services, her knowledge of it started on the year 2015 when she saw her relative do the same profession while treating the hair of her aunt’s and cousins.
-    Because of her curiosity she observed every steps and chemicals that was used. Since she was still so young and still studying she haven’t been able to try it until December of the 2019 when her curiosity had become a goal for her.
-    She watched some youtube influencers who are professional hair dressers until she found the blogger named Chading.
+    Because of her curiosity she observed every steps and chemicals that was used. Since she was still so young and still studying she haven’t been able to try it until December of the year 2019 when her curiosity had become a goal for her.
+    She watched some youtube influencers who are professional hair dressers until she found the vlogger named Chading.
 </p>
 <p>
-    In his blog he is sharing the techniques, step by step process as well as the chemicals that has been used. After she have watched his video Mary has become more eager to finally try it and learn more. She then bought the chemicals to be used and for the hair iron and hair blower she have this already for she has also been doing a make up and hairstyling for a living. After she have all the things needed she then started it with her own hair, she was glad that she was able to do it right and so she started posting it on Facebook. Luckily one client finally trusted her to do her hair. Mary started the price of 500 pesos only. She was very happy when she saw her clients hair finally straightened. After one, her clients grow more and more. Although not every work is perfect since some hair needed a redo it didn’t stop Mary to work hard and learn more.
+    The vlogger is sharing the hair techniques, step by step process as well as the chemicals that has been used. After she have watched his video Mary has become more eager to finally try it and learn more. She then bought the chemicals to be used and for the hair iron and hair blower she have this already for she has also been doing a make up and hair styling for a living. After she have all the things needed she then started it with her own hair, she was glad that she was able to do it right and so she started posting it on Facebook. Luckily one client finally trusted her to do her hair. Mary started the price of 500 pesos only. She was very happy when she saw her clients hair finally straightened. After one, her clients grow more and more. Although not every work is perfect since some hair needed a redo it didn’t stop Mary to work hard and learn more.
+    
 </p>
 <p>
-    Moving forward since Mary still thinks that she can do more works, she again started learning doing the nails extensions on the year 2023. She have been inspired by all the reels she saw in Facebook. And her eagerness to learn led her to have another knowledge and skills which she started using for business and finally have another way to earn. After sometime she then again started the foot spa and massage business in the same year.
+    Moving forward since Mary still thinks that she can do more works, she again started learning doing the nail extensions on the year 2023. She have been inspired by all the reels she saw in Facebook. And her eagerness to learn led her to have another knowledge and skills which she started using for business and finally have another way to earn. After sometime she then again started the foot spa and massage business in the same year.
+    In 2023 Mary decided to work in one of the expensive salon in the town she lives in and there she had learned more under the guidance of the owner and the senior staff. She was able to learn new techniques, refine her skills and as a result she's now able to offer professional level of service in the convenience of your own home or you are welcome to visit her home studio in Tagasa, Maya, Daanbantayan, Cebu.
 </p>
-<p>
-    @2024-02
-</p>
-
 </div>
+<h4>
+    @2024-02
+</h4>
+
+
 </div>
 
 </body>
 </html>
    <style>
 
- .h1{
-    height:100%;
-    width:50%;
-   margin:auto;
-   font-family: Times New Roman;
-    font-size: 60px;
-    font-style:italic;
-    font-weight: bold;
-
-}
 .container {
-    padding: 2rem;
-      position: inline-block;
-      display: inline-block;
+    margin-top: 170px;
+    align-items: center;
+  
 }
 .slider-wrapper{
-    display: inline-block;
-    max-width: 35rem;
+    margin-top: 200px;
+    max-width: 25rem;
     margin: 0 auto;
   
 }
 .slider {
-   
+    position: inline-block;
     display: flex;
     aspect-ratio: 16 / 16;
     overflow-x:hidden;
@@ -143,61 +181,35 @@
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(150, 93%, 64%, 0.25);
     border-radius: 0.5rem;
 }
-.slider img {
-    animation: slide 8s;
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit:cover;
-    display: inline-block;
-}
-.slider-nav{
+
+.slider-nav {
     display:flex;
     column-gap: 1rem;
-    position: inline-block;
     bottom: 1.5rem;
     z-index:1;
-    margin-left: 40%;
-    margin-top: -5%;
+    margin-left: 35%;
 }
 .slider-nav a {
-    width: 1rem;
-    height: 1rem;
+    font-size: 0.01;  width: .5rem;
+    height: .5rem;
     border-radius: 50%;
-    background-color: #7ce922;
+    background-color: palevioletred;
     opacity: 0.75;
     transition: opacity ease 250ms;
+    color: palevioletred;
     
 }
 .slider-nav a:hover {
     opacity: 0;
     
 }
-@keyframes slide{
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(0);
-    }
-    30%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-100%);
-    }
-    55%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translateX(-200%);
-    }
-    80%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-300%);
-    }
+
+
+ body{
+    
+    padding-top: 50px;
  }
+
  .content{
         margin: auto;
         width:50%;
@@ -206,210 +218,10 @@
         text-align: justify;
         display: inline-block;
  }
- 
-html{
-    text-align: center;
-    padding:0;
-    width:auto;
-    background: url(b3.jpg) ;
-    background-size: 100vw 100vw;
-}
-
-nav{
-   
-    background: url(b2.jpg) no-repeat 0 0;
-    margin:0;
-    padding:0;
-    margin-top:-8px;
-    position:fixed;
-    height: 100%;
-    width:100%;
-   background-attachment: fixed;
-  
-  
- }
-.my-logo{
-    margin-top: 1px;
-    margin-left:20px;
-    border: 2px;
-    border-radius: 2px;
-    width:80px;
-    height:53px;
-    background-image: url(logo.jpg);
-    background-size: 100%;
-
- }
- header{
-   
-    float:top;
-    margin-left:-10px;
-    padding:0;
-    width:100%;
-    height:50px;
- }
- .home{
-    margin:-50px 200px;
-    background:url(b.jpg) no-repeat center;
-            height: 50px;
-            border-color:white;
-            width: 50px;
-            border-radius: 2px;
-            cursor: pointer;
-            transition: opacity 0.15s;
-            float: right;
-            box-shadow: 0px 0px 0px 0px;
-            padding:0px;
-            transition: background-color 1s,
-            color 1s;
-            transition: box-shadow 0.15s,
-            color 0.15s;
-            font-size: 1px;
-}
-.link-book{  
-    margin:-50px 125px;
-    background:url(a.jpg) no-repeat center;
-            height: 50px;
-            border-color:white;
-            width: 50px;
-            border-radius: 2px;
-            cursor: pointer;
-            transition: opacity 0.15s;
-         
-            box-shadow: 0px 0px 0px 0px;
-            padding:0px;
-            transition: background-color 1s,
-            color 1s;
-            transition: box-shadow 0.15s,
-            color 0.15s;
-            float: right;
-}
-.dropdown.active > .link-book,
-.link-book:hover{
-    opacity: 0.5;
-}
-.dropdown{
-    position: relative;
-}
-.dropdown-book {
-    position: absolute;
-    right:90px;
-    top: calc(100% + .25rem);
-    background-color: palevioletred;
-    padding: .75rem;
-    border-radius: .25rem;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
-    opacity:0;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-}
-.dropdown.active > .link-book + .dropdown-book {
-    opacity:1;
-    transform: translateY(0);
-    pointer-events: auto
-}
-
-
-
-.link-s{  
-    margin:-50px 50px;
-    background:url(c.jpg) no-repeat center;
-            height: 50px;
-            border-color:white;
-            width: 50px;
-            border-radius: 2px;
-            cursor: pointer;
-            transition: opacity 0.15s;
-            
-            box-shadow: 0px 0px 0px 0px;
-            padding:0px;
-            transition: background-color 1s,
-            color 1s;
-            transition: box-shadow 0.15s,
-            color 0.15s;
-            float:right;
-}
-.dropdown.active > .link-s,
-.link-s:hover{
-    opacity: 0.5;
-}
-.dropdown{
-    position: relative;
-}
-.dropdown-s {
-    position: absolute;
-    right:10px;
-    top: calc(100% + .25rem);
-    background-color: palevioletred;
-    padding: .25rem;
-    border-radius: .25rem;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
-    opacity:0;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-}
-.dropdown.active > .link-s + .dropdown-s {
-    opacity:1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-
-
-
-
-.dropdown-heading{
-    font-size: 12px;
-    font-weight: bold;
-    text-align: left;
-}
-
-.link1{
-    display: inline-block;
-    display: flex;
-    flex-direction: column;
-    gap:.01rem;
+h2{
     font-size: 11px;
-    text-align: left;
-    
-}
-.dropdown-links{
-    display: inline-block;
-    display: flex;
-    flex-direction: column;
-    gap:.01rem;
-    font-size: 12px;
-    text-align: left;
-    
-}
-.services-grid{
-    
-    display:grid;
-    grid-template-columns: repeat(2, max-content);
-    gap:1rem;
 }
 
-.m{
-    display: inline-block;
-    background-image: url(m.jpg);
-    height: 28px;
-    width: 30px;
-    color:white;
-}
-.i{
-    color:rgb(242, 146, 44);
-    display: inline-block;
-    background-image: url(i.jpg);
-    height: 28px;
-    width: 30px;
-}
-.p{
-    color:greenyellow;
-    display: inline-block;
-    background-image: url(p.jpg);
-    height: 28px;
-    width: 30px;
-}
 
 
 </style>
